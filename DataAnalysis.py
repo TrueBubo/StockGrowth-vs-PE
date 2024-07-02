@@ -4,8 +4,8 @@ from CompanyStats import CompanyStats
 import numpy as np
 import matplotlib.pyplot as plt
 
-stats2022: dict = CompanyStats("Common Stocks — USA — TradingView - 2022.html", 2022).getStats()
-stats2024: dict = CompanyStats("All US Stocks on One Page — TradingView - 2024.html", 2024).getStats()
+stats2022: dict = CompanyStats("Data/TradingView-2022.html", 2022).getStats()
+stats2024: dict = CompanyStats("Data/TradingView-2024.html", 2024).getStats()
 
 number_of_years_between = 22 / 12
 
