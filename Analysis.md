@@ -1,4 +1,4 @@
-# Introduction
+b# Introduction
 When investing in companies, we want to choose the ones that will give us the highest returns over time. One of the common ways this is achieved are capital gains, meaning that the price of companies' stocks increased, and we sold it at a higher value. To find the most likely companies to grow in the future, we look at several data points about them. Two such statistics we are going to look at include stock price, and earning per share (yearly). If we divide stock price, and EPS, we get P/E ratio. P/E ratio hence indicates how many years would it take at the current rate for earning from this company to cover the cost of the share we bought. Therefore, if earnings did not grow, it would not make sense for people to wait longer for their investment to bear fruit. Hence, investors would only invest in it, if they thought the companies' revenue would increase in the future. But if revenue increses the total value the investors value the company should increase, and hence the stock price should go up. Therefore, if P/E did not correlate with higher future growth, it would make no sense to invest in them, and investors would be investing in a bubble. Henceforth, I am going to analyze whether higher P/E companies have higher growth rates in the future.
 
 # Data collection
@@ -140,7 +140,7 @@ plt.show()
 
 
 
-![growth_pe_graph.png](./img/growth_pe_graph.png)
+![growth_pe_graph.png](./growth_pe_graph.png)
 
 # Discussion
 Concerning outliers, I did not want to blindly delete data points outside range. Due to the nature of this problem, where people want to find company, with possibility of large returns, and risking that it will be a bubble, and drop. The other option of reasonably valued company growing well. Since people cherry-pick stocks to maximize returns, it would not make sense to exclude them.
