@@ -104,13 +104,13 @@ print(f"growth_rate = {round(slope, 4)}*PE + {round(intercept, 4)}")
 print(f"r^2 = {round(r_value ** 2, 4)}")
 print(f"p = {round(p_value, 4)}")
 ```
-We get a linear function of $growth\_rate = 0.124*PE - 1.8534$. 
+We get a linear function of $growth\\_rate = 0.124*PE - 1.8534$. 
 PE determines 11.16% of growth rate ($r^2$), and the probability that we would get this data by chance, and the real slope would be 0 is 3.38%, which is  below our significance level, and hence I reject the null hypothesis.
 
 Even though we found that they are correlated, the fit is really poor. Hence, to model the data better, I can use the idea, that since the growth is exponential, and the dominant term will be the last year. I can approximate, how much growth would be necessary, to match the lower P/E company.
 
-Let $r$ be the ratio of P/E of two companies, and $g$ the ratio between growth rates, and $y$ number of years of growth.
-$$r = g^y$$
+Let $r$ be the ratio of P/E of two companies, and $g$ the ratio between growth rates, and $y$ number of years of growth.  
+$$r = g^y$$  
 $$r^{1/y} = g$$
 
 ```py
@@ -122,7 +122,7 @@ print(f"r^2 = {r_value_sqrt}")
 print(f"p = {round(p_value_sqrt, 4)}")
 ```
 Since the number of years is 22/12, the function we will get has a dominant term with exponent 12/22
-The best fitting curve is $`growth\_rate = 1.0426*PE^{0.5455} - 4.4229$
+The best fitting curve is $growth\\_rate = 1.0426*PE^{0.5455} - 4.4229$
 $r^2$ increases a lot to 33.76%, and $p$ with the null hypothesis of constant function is 3.09%, which is under 5% significance level, hence I am again rejecting the null hypothesis.
 
 Graph showing fit
